@@ -1,2 +1,5 @@
 # thoughts-translator
-Translate AI reasoning/thoughts in Marinara
+A Marinara extension for translating AI reasoning (thoughts) into Korean.
+
+Downloads:
+- GitHub Releases
