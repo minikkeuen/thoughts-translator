@@ -1,0 +1,56 @@
+.mkt-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+  min-height: 2.5rem;
+  padding: .3rem .65rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--secondary);
+}
+.mkt-actions { display: flex; align-items: center; gap: .25rem; }
+.mkt-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  flex: 0 0 2rem;
+  border: 1px solid transparent;
+  border-radius: .45rem;
+  padding: 0;
+  background: transparent;
+  color: var(--muted-foreground);
+  transition: color .15s ease, background .15s ease, border-color .15s ease, opacity .15s ease;
+}
+.mkt-button svg {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.mkt-button:hover:not(:disabled) {
+  color: var(--foreground);
+  background: var(--accent);
+  border-color: var(--border);
+}
+.mkt-button:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+.mkt-button:disabled { cursor: wait; opacity: .45; }
+.mkt-status {
+  overflow: hidden;
+  color: var(--muted-foreground);
+  font-size: .625rem;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.mkt-status:empty { display: none; }
+.mkt-status[data-kind="success"] { color: var(--primary); }
+.mkt-status[data-kind="error"] { color: var(--destructive); }
+@media (max-width: 520px) {
+  .mkt-toolbar { padding-inline: .45rem; }
+  .mkt-status { max-width: 65%; }
+}
