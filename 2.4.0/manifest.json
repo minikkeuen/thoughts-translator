@@ -1,0 +1,16 @@
+{
+  "kind": "marinara.personal-extension",
+  "version": 1,
+  "config": {
+    "name": "Model Thoughts 수동 한국어 번역",
+    "version": "v2",
+    "description": "Model Thoughts 원문을 유지하면서 요청할 때만 현재 채팅의 AI 번역 연결로 한국어 번역합니다. 원문·번역 전환, 메모리 캐시, 다시 번역을 지원합니다.",
+    "runtime": "client",
+    "enabled": false,
+    "capabilities": [
+      "full_page_access"
+    ],
+    "cssPath": "extension.css",
+    "jsPath": "extension.js"
+  }
+}
