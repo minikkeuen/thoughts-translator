@@ -3,7 +3,7 @@
   "version": 1,
   "config": {
     "name": "추론 번역",
-    "version": "v2.1.8",
+    "version": "v2.1.10",
     "description": "Model Thoughts를 전용 지침으로 독립적으로 한국어 번역합니다. 현재 채팅의 AI 연결을 사용하며 원문·번역 전환, 메모리 캐시, 다시 번역을 지원합니다.",
     "runtime": "client",
     "enabled": false,
